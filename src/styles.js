@@ -4,8 +4,6 @@ export const BaseComponentSkeleton = styled.div`
 /* temporary */
     margin: 100px;
     
-
-
 /* size */
     min-height: 300px;
     max-height: 300px;
@@ -16,7 +14,7 @@ export const BaseComponentSkeleton = styled.div`
     border-radius: 5px;
     box-shadow:0px 6px 10px grey;
 
-/*  */
+/* Column Effect*/
     display:flex;
     flex-direction: column;
 `
@@ -24,7 +22,8 @@ export const BaseComponentSkeleton = styled.div`
 
 export const UserAreaSkeleton = styled.div`
     height: 30px;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     float:right; 
     clear:right;
 

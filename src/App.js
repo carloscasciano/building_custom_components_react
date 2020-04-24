@@ -1,11 +1,10 @@
 import React from 'react';
-import Shoes from './components/Shoes'
+import Shoe from './components/Shoe'
 
 function App() {
   return (
     <>
-      <p>Custom Component</p>
-      <Shoes />
+      <Shoe />
     </>
   );
 }
