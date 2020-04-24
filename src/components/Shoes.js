@@ -9,7 +9,7 @@ function UserFavourite() {
     return (
         <div>
             <UserAreaSkeleton>
-                <img src={`icons/favouriteFalse.png`}/>
+                <img src={`icons/favouriteFalse.png`} alt={"shoe_name"}/>
             </UserAreaSkeleton>
         </div>
     )
@@ -25,7 +25,6 @@ function ShoeImage(props) {
     )
 }
 
-
 function InformationAlpha() {
     return (
         <div>
@@ -36,7 +35,6 @@ function InformationAlpha() {
         </div>
     )
 }
-
 
 function InformationBeta() {
     return (
