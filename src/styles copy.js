@@ -24,59 +24,35 @@ export const BaseComponentSkeleton = styled.div`
     display:flex;
     flex-direction: column;
 `
+
 /* USER AREA */
 
 export const UserAreaSkeleton = styled.div`
     height: 30px;
-    display: flex;
-    justify-content: flex-end;
-    float:right; 
-    clear:right;
-
-    img{
-        width: auto;
-        height: auto;
-        margin-right: 6px;
-        margin-top: 6px;
-    }
-
+    background-color: pink;
 `
 
 /* IMAGE AREA */
 
 export const ShoeImageSkeleton = styled.div`
     height: 210px;
-    width: 345px;
-    display: flex;
+    background-color: blue;
 
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 210px;
-        width: 345px;
-        object-fit: contain
-    }
 `
 
 /* INFORMATION AREA */
 
-export const InformationSkeleton = styled.div`
+export const InformationAlphaSkeleton = styled.div`
     height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: ${props => props.up ? "flex-end" : "flex-start"};
+    background-color: green;
+`
 
-    p{
-        font-family: ${baseStyleInfo.baseFont}, sans-serif;
-        color: ${baseStyleInfo.baseTextColor};
-        font-weight: ${props => props.bold ? 600 : 400};
-        margin: 0 12px 0 12px; 
-    }
+export const InformationBetaSkeleton = styled.div`
+    height: 30px;
+    background-color: orange;
 `
 
 
-/* Cart: */
 
 export const CartSkeleton = styled.div`
     display: flex;
@@ -101,4 +77,3 @@ export const CartSkeleton = styled.div`
         margin: 0 6px 0 0; 
     }
 `
-

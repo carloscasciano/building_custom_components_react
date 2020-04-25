@@ -1,6 +1,6 @@
 import React from 'react';
 import Shoe from './components/Shoe'
-import dummyShoes from './dummy_shoes/dummyShoes'
+import dummyShoes from './dummyData/dummyShoes'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       </div>
       
     </>
-  );
+  )
 }
 
 export default App;

@@ -2,8 +2,7 @@ import React from 'react'
 import { BaseComponentSkeleton, 
          UserAreaSkeleton, 
          ShoeImageSkeleton,
-         InformationAlphaSkeleton,
-         InformationBetaSkeleton, 
+         InformationSkeleton, 
          CartSkeleton
         } from '../styles'
 
@@ -12,7 +11,6 @@ export default function Shoe(props) {
     return (
        <>
             <BaseComponentSkeleton>
-           {/*  {console.log(props.shoeInfo.shoeFavourite)} */}
                 <UserAreaSkeleton>      
                     <img 
                         src={props.shoeInfo.shoeFavourite? `icons/favouriteFalse.png`:`icons/favouriteTrue.png`} 
@@ -22,18 +20,18 @@ export default function Shoe(props) {
                 <ShoeImageSkeleton>
                     <img src={`shoes/${props.shoeInfo.shoeImage}.png`} alt={"testing"} ></img>
                 </ShoeImageSkeleton>    
-                <InformationAlphaSkeleton>
+                <InformationSkeleton up bold>
                     <p>{props.shoeInfo.shoeBrand.toUpperCase()}</p>
                     <p>${props.shoeInfo.shoePrice}</p>
-                </InformationAlphaSkeleton>
-                <InformationBetaSkeleton>
+                </InformationSkeleton>
+                <InformationSkeleton>
                     <p>{props.shoeInfo.shoeName}</p>
                     <CartSkeleton>
                         <p>to cart</p>
                         <img src={`icons/shopping-cart.png`} alt={"shopping_cart"}></img>
                     </CartSkeleton>
                     
-                </InformationBetaSkeleton>
+                </InformationSkeleton>
             </BaseComponentSkeleton>
        </>
     )
