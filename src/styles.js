@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const baseStyleInfo = {
-    baseFont : "Helvetica",
+    baseFont : "Roboto",
     baseTextColor: "#444444"
 }
 
@@ -17,12 +17,13 @@ export const BaseComponentSkeleton = styled.div`
     max-width: 345px;
 
 /* paper effect */
-    border-radius: 5px;
-    box-shadow:0px 6px 10px grey;
+    border-radius: 3px;
+    box-shadow:0px 3px 5px #CCCCCC;
 
 /* Column Effect*/
     display:flex;
     flex-direction: column;
+
 `
 /* USER AREA */
 
@@ -97,12 +98,18 @@ export const CartSkeleton = styled.div`
         width: 15px;
         height: 15px;
         margin: 0 12px 0 0;
+
+        &:hover {
+            width: 18px;
+            height: 18px;
+          }
     }
 
     p{
         font-family: ${baseStyleInfo.baseFont}, sans-serif;
         color: ${baseStyleInfo.baseTextColor}; 
         font-size: 20;   
-        margin: 0 3px 0 0; 
+        margin: 0 6px 0 0; 
     }
 `
+
