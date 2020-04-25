@@ -1,10 +1,21 @@
 import React from 'react';
 import Shoe from './components/Shoe'
+import dummyShoes from './dummy_shoes/dummyShoes'
 
 function App() {
   return (
     <>
-      <Shoe />
+      <div style={{display:"flex", flexWrap: "wrap"}}>
+      {
+        dummyShoes.map(shoe => 
+          <Shoe 
+            key={shoe.shoeId}
+            shoeInfo={shoe}
+          />
+        )
+      }
+      </div>
+      
     </>
   );
 }

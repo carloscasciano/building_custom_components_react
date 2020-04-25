@@ -1,8 +1,14 @@
 import styled from "styled-components"
 
+const baseStyleInfo = {
+    baseFont : "Helvetica",
+    baseTextColor: "#444444"
+}
+
+
 export const BaseComponentSkeleton = styled.div`
 /* temporary */
-    margin: 100px;
+    margin: 30px;
     
 /* size */
     min-height: 300px;
@@ -40,14 +46,15 @@ export const UserAreaSkeleton = styled.div`
 
 export const ShoeImageSkeleton = styled.div`
     height: 210px;
+    width: 345px;
     display: flex;
 
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 120%;
-        height: 120%;
+        height: 210px;
+        width: 345px;
         object-fit: contain
     }
 `
@@ -61,7 +68,8 @@ export const InformationAlphaSkeleton = styled.div`
     align-items: flex-end;
 
     p{
-        font-family: Helvetica, sans-serif;
+        font-family: ${baseStyleInfo.baseFont}, sans-serif;
+        color: ${baseStyleInfo.baseTextColor};
         font-weight: 600;
         margin: 0 12px 0 12px; 
     }
@@ -74,7 +82,27 @@ export const InformationBetaSkeleton = styled.div`
     align-items: flex-start;
 
     p{
-        font-family: Helvetica, sans-serif;        
+        font-family: ${baseStyleInfo.baseFont}, sans-serif;
+        color: ${baseStyleInfo.baseTextColor};       
         margin: 0 12px 0 12px; 
+    }
+`
+
+export const CartSkeleton = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img{
+        width: 15px;
+        height: 15px;
+        margin: 0 12px 0 0;
+    }
+
+    p{
+        font-family: ${baseStyleInfo.baseFont}, sans-serif;
+        color: ${baseStyleInfo.baseTextColor}; 
+        font-size: 20;   
+        margin: 0 3px 0 0; 
     }
 `

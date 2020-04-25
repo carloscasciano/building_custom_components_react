@@ -3,25 +3,33 @@ import { BaseComponentSkeleton,
          UserAreaSkeleton, 
          ShoeImageSkeleton,
          InformationAlphaSkeleton,
-         InformationBetaSkeleton } from '../styles'
+         InformationBetaSkeleton, 
+         CartSkeleton} from '../styles'
 
 export default function Shoe(props) {
+    /* console.log(props.shoeInfo) */
     return (
        <>
             <BaseComponentSkeleton>
+           {/*  {console.log(props.shoeInfo.shoeFavourite)} */}
                 <UserAreaSkeleton>
+                    
                     <img src={`icons/favouriteFalse.png`} alt={"shoe_name"}/>
                 </UserAreaSkeleton>
                 <ShoeImageSkeleton>
-                    <img src={`shoes/shoe_id_01.png`} alt={"testing"}></img>
+                    <img src={`shoes/${props.shoeInfo.shoeImage}.png`} alt={"testing"} ></img>
                 </ShoeImageSkeleton>    
                 <InformationAlphaSkeleton>
-                    <p>NIKE</p>
-                    <p>$125</p>
+                    <p>{props.shoeInfo.shoeBrand}</p>
+                    <p>${props.shoeInfo.shoePrice}</p>
                 </InformationAlphaSkeleton>
                 <InformationBetaSkeleton>
-                    <p>Court Royale</p>
-                    <p>to cart</p>
+                    <p>{props.shoeInfo.shoeName}</p>
+                    <CartSkeleton>
+                        <p>to cart</p>
+                        <img src={`icons/shopping-cart.png`} alt={"shopping_cart"}></img>
+                    </CartSkeleton>
+                    
                 </InformationBetaSkeleton>
             </BaseComponentSkeleton>
        </>
