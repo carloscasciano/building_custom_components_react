@@ -1,3 +1,3 @@
 Building Custom Components Tutorial.
 
-More info soon.
+Medium tutorial: https://medium.com/@carlos.casciano/building-custom-components-from-scratch-with-react-styled-components-f878dd9c462e
