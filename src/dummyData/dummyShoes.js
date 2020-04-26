@@ -1,4 +1,3 @@
-
 const dummyShoes = [
     {
         shoeId: 1,
@@ -80,8 +79,23 @@ const dummyShoes = [
         shoeFavourite: Math.random() < 0.5? true : false,
         shoePrice: Math.round(Math.random()*100 + 75),   
     },
+    {
+        shoeId: 11,
+        shoeBrand: "Oakley",
+        shoeName: "Rail Fanthom",
+        shoeImage: "shoe_id_11",
+        shoeFavourite: Math.random() < 0.5? true : false,
+        shoePrice: Math.round(Math.random()*100 + 75),   
+    },
+    {
+        shoeId: 12,
+        shoeBrand: "Oakley",
+        shoeName: "Socket",
+        shoeImage: "shoe_id_12",
+        shoeFavourite: Math.random() < 0.5? true : false,
+        shoePrice: Math.round(Math.random()*100 + 75),   
+    },
+    
 ]
-
-
 
 export default dummyShoes
