@@ -13,6 +13,9 @@ export const MockHeaderSkeleton = styled.div`
     box-shadow:0px 3px 5px #CCCCCC;
     margin: -10px -5px 30px -5px;
     
+    @media (max-width: 768px) {
+        display: none;
+      }
 
     p{
         font-family: Helvetica, sans-serif;
@@ -25,8 +28,19 @@ export const MockHeaderSkeleton = styled.div`
 export const MockDataAreaSkeleton = styled.div`
     display:flex;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+        align-items: center;
+        justify-content: center;
+      }
+    
+
 `
 
 export const MockSideBars = styled.div`
-    width: 200px;    
+    width: 200px;
+
+    @media (max-width: 768px) {
+        visibility: hidden;
+      }
 `
