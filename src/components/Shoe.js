@@ -18,7 +18,7 @@ export default function Shoe(props) {
                     />
                 </UserAreaSkeleton>
                 <ShoeImageSkeleton>
-                    <img src={`shoes/${props.shoeInfo.shoeImage}.png`} alt={"testing"} ></img>
+                    <img src={`shoes/${props.shoeInfo.shoeImage}.png`} alt={`${props.shoeInfo.shoeName}`} ></img>
                 </ShoeImageSkeleton>    
                 <InformationSkeleton up bold>
                     <p>{props.shoeInfo.shoeBrand.toUpperCase()}</p>

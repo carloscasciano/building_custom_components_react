@@ -95,7 +95,38 @@ const dummyShoes = [
         shoeFavourite: Math.random() < 0.5? true : false,
         shoePrice: Math.round(Math.random()*100 + 75),   
     },
-    
+    {
+        shoeId: 13,
+        shoeBrand: "Asics",
+        shoeName: "Buzz 3",
+        shoeImage: "shoe_id_13",
+        shoeFavourite: Math.random() < 0.5? true : false,
+        shoePrice: Math.round(Math.random()*100 + 75),   
+    },
+    {
+        shoeId: 14,
+        shoeBrand: "Asics",
+        shoeName: "Sakura",
+        shoeImage: "shoe_id_14",
+        shoeFavourite: Math.random() < 0.5? true : false,
+        shoePrice: Math.round(Math.random()*100 + 75),   
+    },
+    {
+        shoeId: 15,
+        shoeBrand: "Asics",
+        shoeName: "Gel-Equation 10",
+        shoeImage: "shoe_id_15",
+        shoeFavourite: Math.random() < 0.5? true : false,
+        shoePrice: Math.round(Math.random()*100 + 75),   
+    },
+        {
+        shoeId: 16,
+        shoeBrand: "Asics",
+        shoeName: "GT-2000",
+        shoeImage: "shoe_id_16",
+        shoeFavourite: Math.random() < 0.5? true : false,
+        shoePrice: Math.round(Math.random()*100 + 75),   
+    }
 ]
 
 export default dummyShoes
