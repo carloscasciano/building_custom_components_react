@@ -1,12 +1,16 @@
-import React from 'react';
-import Shoe from './components/Shoe'
-import dummyShoes from './dummyData/dummyShoes'
-import {MockSiteMainSkeleton, MockHeaderSkeleton, MockDataAreaSkeleton, MockSideBars} from './mockSiteStyles'
+import React from "react";
+import Shoe from "./components/Shoe";
+import dummyShoes from "./dummyData/dummyShoes";
+import {
+  MockSiteMainSkeleton,
+  MockHeaderSkeleton,
+  MockDataAreaSkeleton,
+  MockSideBars,
+} from "./mockSiteStyles";
 
 function App() {
   return (
     <>
-
       <MockSiteMainSkeleton>
         <MockHeaderSkeleton>
           <p>WHAT'S NEW</p>
@@ -16,30 +20,25 @@ function App() {
           <p>ABOUT</p>
         </MockHeaderSkeleton>
         <MockDataAreaSkeleton>
-          <MockSideBars/>
+          <MockSideBars />
 
-
-          <div style={{display:"flex", flexWrap: "wrap", justifyContent: "center"}}>
-            {
-              dummyShoes.map(shoe => 
-                <Shoe 
-                  key={shoe.shoeId}
-                  shoeInfo={shoe}
-                />
-              )
-            }
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            {dummyShoes.map((shoe) => (
+              <Shoe key={shoe.shoeId} shoeInfo={shoe} />
+            ))}
           </div>
 
-
-          <MockSideBars/>
+          <MockSideBars />
         </MockDataAreaSkeleton>
       </MockSiteMainSkeleton>
-
-
-
-          
     </>
-  )
+  );
 }
 
 export default App;
